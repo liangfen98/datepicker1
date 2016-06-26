@@ -1,0 +1,24 @@
+$(function(){
+    $('#search_button').button({
+        icons:{
+            primary:'ui-icon-search'
+        }
+    });
+    $('#reg').dialog({
+        autoOpen:true,
+        modal:true,
+        resizeable:true,
+        width:500,
+        height:500,
+        buttons:{
+            '提交':function(){},
+            '关闭':function(){}
+        }
+    });
+    $('#reg input[title]').tooltip();
+    $('#date').datepicker(
+        {
+            dateFormat:'yy-mm-dd'
+        }
+    );
+})
